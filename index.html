@@ -4,11 +4,80 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>new-codes</title>
+    <title>tailwindcss</title>
     <link rel="stylesheet" href="./src/style.css">
   </head>
-  <body>
-    <div class="text-center border-[3px]">Lorem.</div>
-    <span class="text-center">center</span>
-  </body>
+  <body class="bg-color">
+<header>
+  <!--header nav -->
+<nav class="pt-[41px] max-mobile:pt-[20px]">
+
+<!-- container -->
+<div class="container max-tablet:max-w-[924px] max-mobile:px-[20px]">
+
+<!-- nav - wrapper -->
+<div class="flex items-center justify-between">
+
+<!-- nav left -->
+<div class="flex gap-[173px] items-center max-tablet:gap-[58px]">
+<a href=""><img class="h-[80px] w-[80px] max-tablet:w-[41px] h-[58px]" src="./svg/ferrari.svg" alt="ferrari logo"> </a>
+<ul class="flex gap-[40px] items-center max-mobile:hidden ">
+  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Услуги</a></li>
+  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Преимущества</a></li>
+  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Наши работы</a></li>
+  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Контакты</a></li>
+</ul>
+</div>
+
+<!-- nav right -->
+<div class="flex gap-[40px] items-center">
+<span class="text-[21px] font-[700] font-bold max-tablet:text-[15px] max-mobile:hidden"><a href="#">+7 (999) 999-09-90</a></span>
+<div class="flex gap-[20px]">
+
+<!-- whatsapp button -->
+<button class="max-mobile:hidden"><a href="#"><img src="./public/svg/whatsapp.svg" alt="whatsapp icon"> </a></button>
+<!-- telegram buttin -->
+<button class="max-mobile:hidden"><a href="#"><img src="./public/svg/telegram.svg" alt="telegram icon"></button></a></div>
+<button class="hidden cursor-pointer max-mobile:block"><img src="./public/svg/burger-btn.svg" alt="burger button"></button>
+</div>
+
+</div>
+</div>
+</nav>
+</header>
+
+<!-- website intro -->
+<section>
+<main class="mt-[118px] max-tablet:mt-[100px] max-mobile:mt-[30px]">
+
+<!-- container -->
+<div class="container max-tablet:max-w-[924px] max-mobile:px-[20px]">
+<h1 class="font-[800] font-extrabold text-[52px] max-tablet:text-[32px]">Превосходство в обслуживании</h1>
+<p class="font-[600] font-semibold text-[36px] max-tablet:text-[24px] max-mobile:text-[15px]">Ваша машина в надежных руках!</p>
+
+<!-- website intrio wrapper -->
+<div class="flex gap-[149px] mt-[50px] max-tablet:gap-[10px] max-mobile:flex-wrap-reverse gap-[10px]">
+<!-- intro left -->
+<div class="max-mobile:flex flex-col max-watches:items-center">
+<button class="buttons px-[67px] py-[20px] w-[320px] max-mobile:h-[55px] text-[12px]"><span class="buttons-content">ОСТАВИТЬ ЗАЯВКУ</span></button>
+<div class="w-[275px] mt-[75px] mb-[20px] flex items-center gap-[10px] border-solid border-[1px] border-[#FFB72B] rounded-[10px] max-tablet:mt-[40px]"><img class="w-[60px] h-[60px]" src= "./public/svg/italy-logo.svg" class="h-[60px] w-[60px]" alt="italy image"><span class="font-[600] font-semibold text-[16px] leading-[100%]">Специально<br> обученные механики</span></div>
+<div class="w-[275px] flex items-center gap-[10px] border-solid border-[1px] border-[#FFB72B] rounded-[10px]"><img class="w-[60px] h-[60px]" src="./public/svg/premium-logo.svg" class="h-[60px] w-[60px]" src="" alt="premium logo"><span class="font-[600] font-semibold text-[16px] leading-[100%]">Толькоb<br>
+   премиум качество</span></div>
+</div>
+
+<!-- intro right -->
+<div class="relative max-mobile:h-[300px]">
+<b class="font-[800] font-extrabold text-[100px] tracking-[-4.5%] max-tablet:text-[70px] ml-[50px] max-mobile:text-[35px]">F812 SUPER</b>
+<img class="block translate-x-[-70px] translate-y-[-120px] h-[478px] w-[1220px] max-tablet:translate-x-[10px] max-mobile:translate-x-[-65px]  tramnslate-y-[300px] h-[140px] w-[326px]" src="./public/svg/ferarri-car.svg" alt="ferarri img">
+<img class="block absolute top-[0] right-[0] z-[-1] h-[377px]  max-tablet:top-[40px] w-[200px] h-[200px] max-mobile:h-[200px] w-[187px]" src="./public/svg/ferrari-logo.svg" >
+</div>
+</div>
+
+</div>
+</main>
+</section>
+
+
+
+</body>
 </html>

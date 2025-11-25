@@ -1,1 +1,48 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@theme {
+  --breakpoint-tablet:1024px;
+  --breakpoint-mobile:640px;
+  --breakpoint-watches:380px;
+  --color-primary-color:#FFFFFF;
+  --color-secondary-color:#FF0000;
+}
+
+@layer base {
+  body {
+    font-family:'Montserrat';
+    color:#ffffff;
+  }
+}
+
+
+@layer components {
+  .container {
+    max-width:1400px;
+    margin:auto;
+  }  
+
+  .bg-color {
+  background:#1A1A1A;
+  }
+
+  .buttons {
+    background:linear-gradient(180deg, #FF0000 0%, #C70000 100%);
+    border-radius:10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .buttons:active {
+    background:rgb(14, 0, 0);
+    transition:3s;
+  }
+
+  .buttons-content:hover {
+      cursor: pointer;
+  }
+
+  }
+
+
