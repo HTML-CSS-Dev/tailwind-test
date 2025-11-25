@@ -34,15 +34,11 @@
     font-size: 18px;
   }
 
-  .buttons:active {
+  .buttons:hover {
     background:rgb(14, 0, 0);
-    transition:3s;
   }
 
   .buttons-content:hover {
       cursor: pointer;
   }
-
-  }
-
-
+}
