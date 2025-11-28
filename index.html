@@ -1,103 +1,787 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwindcss</title>
-    <link rel="stylesheet" href="./src/style.css">
-  </head>
-  <body class="bg-color">
-<header>
-  <!--header nav -->
-<nav class="pt-[41px] max-mobile:pt-[20px]">
 
-<!-- container -->
-<div class="container max-tablet:max-w-[924px] max-mobile:px-[20px]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=Clicker+Script&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
 
-<!-- nav - wrapper -->
-<div class="flex items-center justify-between">
+<body class="bg-[#1A1A1A]">
+    <header class="bg-[#333333]">
+        <!-- navbar section -->
+        <nav class="p-[10px] sm:px-[20px] md:px-[30px] flex justify-between items-center max-w-[1500px] m-auto">
+            <!-- header logo start -->
+            <div>
+                <a href="#">
+                    <img src="../assets/icons/logo.svg" alt="logo">
+                </a>
+            </div>
 
-<!-- nav left -->
-<div class="flex gap-[173px] items-center max-tablet:gap-[58px]">
-<a href=""><img class="h-[80px] w-[80px] max-tablet:w-[41px] h-[58px]" src="./svg/ferrari.svg" alt="ferrari logo"> </a>
-<ul class="flex gap-[40px] items-center max-mobile:hidden ">
-  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Услуги</a></li>
-  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Преимущества</a></li>
-  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Наши работы</a></li>
-  <li><a class="font-[600] font-semibold text-[18px] max-tablet:text-[16px]" href="#">Контакты</a></li>
-</ul>
-</div>
+            <!-- navbar list  section -->
+            <ul class="hidden sm:p-[30px] sm:block sm:flex sm:gap-[40px] sm:text-[18px] sm:text-[#FFFFFF] ">
+                <li>
+                    <a href="#">
+                        <span class=" sm:hover:text-[#FF0000] sm:hover:transition">Услуги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class=" sm:hover:text-[#FF0000] sm:hover:transition">Преимущества</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class=" sm:hover:text-[#FF0000] sm:hover:transition">Наши работы</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class=" sm:hover:text-[#FF0000] sm:hover:transition">Контакты</span>
+                    </a>
+                </li>
+            </ul>
 
-<!-- nav right -->
-<div class="flex gap-[40px] items-center">
-<span class="text-[21px] font-[700] font-bold max-tablet:text-[15px] max-mobile:hidden"><a href="#">+7 (999) 999-09-90</a></span>
-<div class="flex gap-[20px]">
+            <!-- navbar contac section -->
+            <div class="flex gap-[30px] items-center">
+                <!-- navbar tel section -->
+                <p
+                    class="hidden md:block text-[21px] leading-[100%] font-montserrat font-semibold text-[#FFFFFF] cursor-pointer hover:text-[#FF0000] hover:transition">
+                    <span>+7 (999) 999-09-90</span>
+                </p>
+                <!-- navbar whatsap section -->
+                <div class="hidden md:block hover:scale-105 hover:transition">
+                    <a href="https://www.whatsapp.com/">
+                        <img src="../assets/icons/whatsapp.svg" alt="">
+                    </a>
+                </div>
+                <!--navbar telegram section  -->
+                <div class="hidden md:block hover:scale-105 hover:transition">
+                    <a href="https://web.telegram.org/a/">
+                        <img src="../assets/icons/telegram.svg" alt="telegram">
+                    </a>
+                </div>
+                <!-- mobail contac img -->
+                <div class="md:hidden">
+                    <a href="#">
+                        <img src="../assets/icons/foorm-navbar.svg" alt="navbar foorm">
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-<!-- whatsapp button -->
-<button class="max-mobile:hidden"><a href="#"><img src="./public/svg/whatsapp.svg" alt="whatsapp icon"> </a></button>
-<!-- telegram buttin -->
-<button class="max-mobile:hidden"><a href="#"><img src="./public/svg/telegram.svg" alt="telegram icon"></button></a></div>
-<button class="hidden cursor-pointer max-mobile:block"><img src="./public/svg/burger-btn.svg" alt="burger button"></button>
-</div>
 
-</div>
-</div>
-</nav>
-</header>
+        <!-- header hero section -->
+        <div class="relative max-w-[1500px] m-auto">
+            <div>
+                <h1
+                    class=" sm:text-[32px] sm:text-[24px] sm:mx-[20px] text-[21px] text-[#FFFFFF] leading-[140%] font-semibold font-mantserrat pt-[35px] px-[10px]">
+                    Превосходство в обслуживании</h1>
+                <p class="text-[15px] text-[#FFFFFF] leading-[100%] pt-[8px] px-[10px] font-medium sm:mx-[20px]">Ваша
+                    машина в
+                    надежных руках!</p>
 
-<!-- website intro -->
-<section>
-<main class="mt-[118px] max-tablet:mt-[100px] max-mobile:mt-[30px]">
+                <div class="absolute z-[1] top-[132px] right-[0] px-[10px]">
+                    <img src="../assets/imgs/hors.png" alt="">
+                </div>
 
-<!-- container -->
-<div class="container max-tablet:max-w-[924px] max-mobile:px-[20px]">
-<h1 class="font-[800] font-extrabold text-[52px] max-tablet:text-[32px]">Превосходство в обслуживании</h1>
-<p class="font-[600] font-semibold text-[36px] max-tablet:text-[24px] max-mobile:text-[15px]">Ваша машина в надежных руках!</p>
+                <h1 class="text-[30px] sm:hidden text-[#FFFFFF] text-center pt-[30px] leading-[96px] font-semibold">F812
+                    SUPER
+                </h1>
 
-<!-- website intrio wrapper -->
-<div class="flex gap-[149px] mt-[50px] max-tablet:gap-[10px] max-mobile:flex-wrap-reverse gap-[10px]">
-<!-- intro left -->
-<div class="max-mobile:flex flex-col max-watches:items-center">
-<button class="buttons px-[67px] py-[20px] w-[320px] max-mobile:h-[55px] text-[12px]"><span class="buttons-content">ОСТАВИТЬ ЗАЯВКУ</span></button>
-<div class="w-[275px] mt-[75px] mb-[20px] flex items-center gap-[10px] border-solid border-[1px] border-[#FFB72B] rounded-[10px] max-tablet:mt-[40px]"><img class="w-[60px] h-[60px]" src= "./public/svg/italy-logo.svg" class="h-[60px] w-[60px]" alt="italy image"><span class="font-[600] font-semibold text-[16px] leading-[100%]">Специально<br> обученные механики</span></div>
-<div class="w-[275px] flex items-center gap-[10px] border-solid border-[1px] border-[#FFB72B] rounded-[10px]"><img class="w-[60px] h-[60px]" src="./public/svg/premium-logo.svg" class="h-[60px] w-[60px]" src="" alt="premium logo"><span class="font-[600] font-semibold text-[16px] leading-[100%]">Толькоb<br>
-   премиум качество</span></div>
-</div>
+                <div class="absolute z-[3] left-[0] top-[155px]">
+                    <img class="sm:hidden" src="../assets/imgs/car.png" alt="car">
+                </div>
 
-<!-- intro right -->
-<div class="relative max-mobile:h-[300px]">
-<b class="font-[800] font-extrabold text-[100px] tracking-[-4.5%] max-tablet:text-[70px] ml-[50px] max-mobile:text-[35px]">F812 SUPER</b>
-<img class="block translate-x-[-70px] translate-y-[-120px] h-[478px] w-[1220px] max-tablet:translate-x-[10px] max-mobile:translate-x-[-65px]  tramnslate-y-[300px] h-[140px] w-[326px]" src="./public/svg/ferarri-car.svg" alt="ferarri img">
-<img class="block absolute top-[0] right-[0] z-[-1] h-[377px]  max-tablet:top-[40px] w-[200px] h-[200px] max-mobile:h-[200px] w-[187px]" src="./public/svg/ferrari-logo.svg" >
-</div>
-</div>
+                <div class=" hidden sm:blok sm:absolute sm:z-[2] sm:top-[400px] sm:right-[0]">
+                    <img class="md:max-w-[357px] md:w-[100%]" src="../assets/imgs/hors-3.png" alt="">
+                </div>
 
-</div>
-</main>
-</section>
+                <div class="sm:absolute sm:block right-[200px] sm:top-[150px] hidden">
+                    <img src="../assets/imgs/lpt-shadow.png" alt="">
+                </div>
 
-<!-- registration form -->
-<section>
-<aside class="max-mobile:mt-[60px]">
-<div class="container bg-contain rounded-[10px] py-[40px] px-[40px] bg-[url('/img/details.png')] bg-no-repeat bg-right-bottom  max-tablet:max-w-[924px]  max-mobile:px-[20px]">  
-<h2 class="font-[600] font-semibold text-[32px] leading-[140%] max-tablet:text-[24px] max-mobile:text-center">
-<span class="text-[#FFB72B]">Чтобы узнать точную стоимость работ,</span><br>
-запишитесь на бесплатную консультацию 
-</h2>
-<!-- registration form wrapper -->
-<div class="mt-[40px] flex gap-[20px]  max-tablet:gap-[10px] max-mobile:grid grid-col-[repeat(1,1fr)]">
-<input type="text" placeholder="Ваше имя" class="bg-primary-color py-[18px] pr-[298px] pl-[20px] rounded-[20px] placeholder:font-[400] text-[18px] text-[#1A1A1A80] max-tablet:px-[20px]">
-<div class="flex max-mobile:h-[68px]">
-<div class="flex gap-[13px] items-center bg-primary-color rounded-tl-[20px] rounded-bl-[20px] pl-[20px]"><img class="h-[30px] w-[40px]" src="/svg/russia.svg" alt=""> <img class=" h-[20px] w-[20px]" src="/svg/arrow.svg" alt=""><span class="text-black font-[500]">+7</span></div>
-<input type="text" placeholder="(99) 999-99-99" class=" bg-primary-color pr-[52px] px-[16px] rounded-br-[20px] rounded-tr-[20px] outline-0 text-[#1A1A1A80] max-tablet:pr-[0px] w-[180px] max-mobile:w-[100%]"> 
-</div>
-<button class="buttons px-[81px] py-[20px] max-tablet:px-[39px]"><a href="#">ЗАПИСАТЬСЯ</a></button>
-</div>
-<p class="font-[500] font-medium text-[16px] mt-[20px] max-mobile:text-center">Оставляя заявку, вы даете согласие на обработку персональных данных</p>
-</div>
-</aside>
-</section>
+                <div class="absolute z-[3] left-[293px] top-[225px] ">
+                    <img class="hidden md:hidden sm:block sm:max-w-[754px] sm:max-h-[322px] sm:w-[100%]"
+                        src="../assets/imgs/image-cars.png" alt="">
+                </div>
+                <!-- davom etiramiz
+                  -->
+                <div class="absolute  left-[23.4%] hidden sm:hidden md:block">
+                    <img src="../assets/imgs/image 20.png" alt="">
+                </div>
+
+
+                <div class="absolute sm:hidden z-[2] left-[0] top-[125px] ">
+                    <img src="../assets/imgs/shadow-bg.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="max-w-[1500px] m-auto">
+            <div
+                class="bg-[#FF0000] sm:block hidden sm:mt-[40px] mt-[25px] rounded-[10px]  text-center mx-[20px] hover:bg-red-700 hover:transition hover:cursor-pointer sm:max-w-[320px] sm:hover:shadow-lg sm:hover:shadow-red-500/50">
+                <a href="#">
+                    <button class="py-[15px] sm:text-[18px] text-[#FFFFFF] text-[15px] leading-[100%]"
+                        type="submit">ОСТАВИТЬ
+                        ЗАЯВКУ</button>
+                </a>
+            </div>
+
+            <div class="mt-[158px] sm:mt-[40px] mx-[10px] relative">
+                <div
+                    class="flex gap-[10px] border-[#FFB72B] border duration ml-[20px] mr-[10px] rounded-[10px] rounded-l-[20px] hover:bg-[#FF0000] hover:border-[#FF0000] transition cursor-pointer sm:max-w-[275px] sm:hover:shadow-lg sm:hover:shadow-red-500/50">
+                    <a href="#">
+                        <img class="absolute w-[40.6px] h-[40.6px] left-[-1px] mx-[10px] sm:w-[55px] sm:h-[55px]"
+                            src="../assets/imgs/Специально.png" alt="mask">
+                        <p
+                            class="text-[16px] leading-[100%] font-medium text-[#FFFFFF] py-[11.5px] pr-[33px] pl-[35px] sm:pl-[55px] sm:">
+                            Специально обученные механики</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-[15px] mx-[10px] relative">
+                <div
+                    class="flex gap-[10px] sm:gap-[100px] border-[#FFB72B] border duration ml-[20px] mr-[10px] rounded-[10px] rounded-l-[20px] hover:bg-[#FF0000] hover:border-[#FF0000] transition hover:cursor-pointer sm:max-w-[275px] sm:hover:shadow-lg sm:hover:shadow-red-500/50">
+                    <a href="#">
+                        <img class="absolute  w-[40.6px] h-[40.6px] sm:w-[55px] sm:h-[55px] left-[-1px] mx-[10px]"
+                            src="../assets/imgs/crown-optimization.png" alt="mask">
+                        <p
+                            class="text-[16px] leading-[100%] font-medium text-[#FFFFFF] py-[11.5px] pr-[33px] pl-[35px] sm:pl-[55px]">
+                            Специально обученные механики</p>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="bg-[#FF0000] sm:hidden mt-[25px] rounded-[10px]  text-center mx-[20px] hover:bg-red-700 hover:transition hover:cursor-pointer sm:max-w-[320px] sm:hover:shadow-lg sm:hover:shadow-red-500/50">
+                <a href="#">
+                    <button class="py-[15px] sm:text-[18px] text-[#FFFFFF] text-[15px] leading-[100%]"
+                        type="submit">ОСТАВИТЬ
+                        ЗАЯВКУ</button>
+                </a>
+            </div>
+
+            <div
+                class="flex gap-[8px] mt-[20px] sm:mt-[138px] items-center justify-center sm:justify-start sm:mx-[20px]">
+                <div
+                    class="max-w-[17px] max-h-[24px] border border-[#FF0000] mx-[10px] rounded-[30%] hover:scale-105 hover:transition sm:hover:shadow-lg sm:hover:shadow-red-500/50">
+                    <a href="#">
+                        <img class="pt-[3.6px] pr-[3.37px] pl-[3.37px] pb-[12px] " src="../assets/icons/arrow.svg"
+                            alt="arrov">
+                    </a>
+                </div>
+                <div>
+                    <p class="text-[12px] leading-[140%] font-medium text-[#FFFFFF]">Листайте вниз</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- tisponsive display -->
+    </header>
+
+    <main class="max-w-[1500px] w-[100%] m-auto">
+        <!-- main foorm section start -->
+        <section
+            class="border border-[#FF0000] rounded-[10px] px-[10px] sm:mx-[20px] md:mx-[30px] mt-[94px] mx-[10px]  ">
+            <div>
+                <!-- 2 section h2 -->
+                <h2
+                    class="sm:text-[24px] md:text-[32px] sm:pt-[30px] font-medium text-[16px] leading-[140%] text-center text-[#FFFFFF] pt-[25px] px-[24px]">
+                    <span
+                        class="sm:text-[24px] md:text-[32px] font-medium text-[16px] leading-[140%] text-center text-[#FFB72B]">
+                        Чтобы узнать точную <br class="sm:hidden">
+                        стоимость работ,
+                    </span> <br>
+                    запишитесь на бесплатную <br class="sm:hidden">
+                    консультацию
+                </h2>
+                <!-- 2 section footer section -->
+                <footer class="sm:mt-[30px] sm:grid sm:w-[100%] sm:grid-cols-3 sm:gap-[10px]">
+                    <div>
+                        <input
+                            class="font-normal sm:mt-[0] border-[#3333334D] text-[14px] sm:text-[18px] leading-[140%] py-[14px] pl-[10px] outline-none text-[#1A1A1A80] w-[100%] mt-[25px] rounded-[10px]"
+                            type="text" placeholder="Ваше имя">
+                    </div>
+
+                    <div>
+                        <div
+                            class="flex mt-[10px] sm:mt-[0] gap-[10px] border border-[#3333334D] rounded-[10px] outline-none bg-[#FFFFFF] border-[#3333334D]">
+                            <img class="pl-[10px]" src="../assets/icons/Russia.svg" alt="">
+                            <img src="../assets/icons/arrow-bottom.svg" alt="">
+                            <p
+                                class="sm:text-[15px] py-[14px] text-[14px] leading-[140%] outline-none bg-none text-[#1A1A1A80]">
+                                <span class="text-black">+7</span> (999) 999-99-99
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <button
+                                class=" sm:mt-[0] sm:text-[18px] bg-[#FF0000] text-[15px] text-[#FFFFFF] leading-[100%]  font-normal py-[15px] w-[100%] rounded-[10px] mt-[10px] hover:shadow-lg  hover:shadow-red-500/50 hover:bg-red-700 hover:transition"
+                                type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                        </a>
+                    </div>
+                </footer>
+                <p
+                    class="text-[12px] sm:pt-[30px] sm:pb-[30px] sm:text-[16px] pb-[25px] leading-[140%] text-center font-medium text-[#FFFFFF] pt-[25px]">
+                    Оставляя заявку, вы даете согласие на <br class="sm:hidden">
+                    обработку персональных данных
+                </p>
+            </div>
+        </section>
+
+        <!-- Наши услуги  section-->
+        <section>
+            <div class="max-w-[1500px] w-[100%] m-auto">
+                <h2
+                    class="md:text-[52px] sm:px-[20px] md:px-[30px] sm:text-[32px] px-[10px]  text-[21px] pt-[55px] text-[#FFFFFF] font-medium">
+                    Наши услуги</h2>
+                <p
+                    class="sm:px-[20px] md:px-[30px] sm:text-[21px] px-[10px] font-medium text-[15px] leading-[140%] text-[#FFFFFF] pt-[10px]">
+                    Снизу мы предоставили список <br>
+                    наших услуг по разделам:
+                </p>
+                <div
+                    class="grid grid-cols-2 gap-[20px] mt-[31px] sm:grid sm:grid-cols-3 sm:gap-[40px] md:grid md:grid-cols-4 sm:px-[15px] ">
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class=" max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/Master.png" alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ТЕХ.ОБСЛУЖИВАНИЕ</p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/ДИАГНОСТИКА.png" alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ДИАГНОСТИКА</p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/ХОДОВАЯ-ЧАСТЬ2.png"
+                            alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ХОДОВАЯ ЧАСТЬ</p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/ТРАНСМИССИЯ.png" alt="">
+                        <p class="v px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ТРАНСМИССИЯ
+                        </p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/ДВИГАТЕЛЬ.png" alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ДВИГАТЕЛЬ</p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/ВЫХЛОПНАЯ-СИСТЕМА.png"
+                            alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ВЫХЛОПНАЯ СИСТЕМА
+                        </p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/Frame 13.png" alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            РУЛЕВОЕ УПРАВЛЕНИЕ
+                        </p>
+                    </div>
+
+                    <div class=" hover:scale-[1.05] hover:transition">
+                        <img class="max-w-[335px] w-[100%] max-h-[250px]" src="../assets/imgs/ТОПЛИВНАЯ СИСТЕМА.png"
+                            alt="">
+                        <p
+                            class="sm:text-[21px] sm:pt-[10px] px-[10px] text-[12px] text-[#FFFFFF] leading-[100%] font-medium">
+                            ТОПЛИВНАЯ СИСТЕМА
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="max-w-[1500px] m-auto px-[10px]">
+                <h2
+                    class="font-extrabold text-[21px] text-[#FFFFFF] leading-[140%] pt-[60px] sm:text-[32px] sm:leading-[100%] sm:font-extrabold md:text-[52px]">
+                    Почему стоит <br class="sm:hidden">
+                    выбрать нас
+                </h2>
+                <div class="grid grid-cols-1 mt-[40px] gap-[8px] sm:flex sm:justify-between sm:items-center">
+
+                    <div class="mt-[40px]">
+                        <div
+                            class="w-[40px] h-[40px] bg-[#FF0000]  rounded-[50%]  sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px]">
+                            <img class="p-[8px]  sm:p-[15px] sm:w-[75px] md:p-[20px] sm:h-[75px] md:w-[100px] md:h-[100px]"
+                                src="../assets/imgs/trophy_winner_first_award.png" alt="">
+                        </div>
+                        <h3
+                            class="pt-[8px] sm:pt-[20px] sm:text-[21px] md:text-[28px] text-[15px] text-[#FFFFFF] leading-[140%] font-semibold">
+                            Заголовок преимущества
+                        </h3>
+                        <p
+                            class="sm:text-[16px] sm:pt-[20px] md:text-[21px] pt-[8px] text-[12px] leading-[140%]  font-medium text-[#FFFFFF] ">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna </p>
+                    </div>
+
+                    <div class="mt-[40px]">
+                        <div
+                            class="w-[40px] h-[40px]  bg-[#FF0000]  rounded-[50%] sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px]">
+                            <img class="p-[8px] sm:p-[15px] md:p[20px] sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px] "
+                                src="../assets/imgs/engine_icon.png" alt="">
+                        </div>
+                        <h3
+                            class="pt-[8px] sm:pt-[20px] sm:text-[21px] md:text-[28px] text-[15px] text-[#FFFFFF] leading-[140%] font-semibold">
+                            Заголовок преимущества
+                        </h3>
+                        <p
+                            class="sm:text-[16px] sm:pt-[20px] md:text-[21px] pt-[8px] text-[12px] leading-[140%] font-medium text-[#FFFFFF] ">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna </p>
+                    </div>
+
+                    <div class="mt-[40px]">
+                        <div
+                            class="w-[40px] h-[40px] bg-[#FF0000]  rounded-[50%] sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px]">
+                            <img class="p-[8px] sm:p-[15px] md:p[20px] sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px] "
+                                src="../assets/imgs/premium-icon-three-o-clock-clock.png" alt="">
+                        </div>
+                        <h3
+                            class="pt-[8px] sm:pt-[20px] sm:text-[21px] md:text-[28px] text-[15px] text-[#FFFFFF] leading-[140%] font-semibold">
+                            Заголовок преимущества
+                        </h3>
+                        <p
+                            class="sm:text-[16px] sm:pt-[20px] md:text-[21px] pt-[8px] text-[12px] leading-[140%] font-medium text-[#FFFFFF] ">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Наши работы section start -->
+        <section>
+            <div class="max-w-[1500px] sm:px-[20px] md:px-[30px] m-auto px-[10px] inline-block">
+                <h2
+                    class="text-[21px] leading-[100%] font-extrabold pt-[60px] text-[#FFFFFF] sm:text-[32px] md:text-[52px] sm:pb-[40px] md:pb-[75px] pb-[25px]">
+                    Наши работы</h2>
+                <div class="grid gap-[20px] grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
+                    <div>
+                        <div class="relative hover:scale-[1.05] hover:transition">
+                            <img class=" w-[300px] md:max-w-[453px] md:w-[100%]  md:h-[300px] sm:h-[221px] sm:max-w-[295px] sm:w-[100%] h-[200px]"
+                                src="../assets/imgs/cars-t.png" alt="car box">
+                            <span
+                                class="sm:max-w-[295px] sm:w-[100%] md:max-w-[453px] md:w-[100%] md:top-[246px] md:py-[20px] md:pl-[20px] sm:top-[186px] sm:text-[18px] absolute pl-[10px] top-[169px] text-[15px] text-[#FF0000] leading-[140%] font-semibold backdrop-blur bg-[#1A1A1ABF] rounded-b-[10px] w-[300px] py-[10px]">
+                                Название работы
+                            </span>
+                        </div>
+                        <p
+                            class="font-medium text-[12px] pt-[10px] sm:pt-[24px] sm:text-[16px] md:text-[21px] leading-[140%] text-[#FFFFFF]">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna <br>
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="relative hover:scale-[1.05] hover:transition">
+                            <img class=" w-[300px] md:max-w-[453px] md:w-[100%]  md:h-[300px] sm:h-[221px] sm:max-w-[295px] sm:w-[100%] h-[200px]"
+                                src="../assets/imgs/cars-t.png" alt="car box">
+                            <span
+                                class="sm:max-w-[295px] sm:w-[100%] md:max-w-[453px] md:w-[100%] md:top-[246px] md:py-[20px] md:pl-[20px] sm:top-[186px] sm:text-[18px] absolute pl-[10px] top-[169px] text-[15px] text-[#FF0000] leading-[140%] font-semibold backdrop-blur bg-[#1A1A1ABF] rounded-b-[10px] w-[300px] py-[10px]">
+                                Название работы
+                            </span>
+                        </div>
+                        <p
+                            class="font-medium text-[12px] pt-[10px] sm:pt-[24px] sm:text-[16px] md:text-[21px] leading-[140%] text-[#FFFFFF]">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna <br>
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="relative hover:scale-[1.05] hover:transition">
+                            <img class=" w-[300px] md:max-w-[453px] md:w-[100%]  md:h-[300px] sm:h-[221px] sm:w-[100%] sm:max-w-[295px] h-[200px]"
+                                src="../assets/imgs/cars-t.png" alt="car box">
+                            <span
+                                class="sm:max-w-[295px] md:max-w-[453px] sm:w-[100%] md:w-[100%] md:top-[246px] md:py-[20px] md:pl-[20px] sm:top-[186px] sm:text-[18px] absolute pl-[10px] top-[169px] text-[15px] text-[#FF0000] leading-[140%] font-semibold backdrop-blur bg-[#1A1A1ABF] rounded-b-[10px] w-[300px] py-[10px]">
+                                Название работы
+                            </span>
+                        </div>
+                        <p
+                            class="font-medium text-[12px] pt-[10px] sm:pt-[24px] sm:text-[16px] md:text-[21px] leading-[140%] text-[#FFFFFF]">
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna <br>
+                            Lorem ipsum dolor sit amet, consectetur <br>
+                            adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- arrow section -->
+        <section>
+            <div class="max-w-[1500px] sm:pt-[50px] m-auto flex gap-[25px] justify-center mt-[25px]">
+                <a href="index.html">
+                    <div>
+                        <img class=" hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition  p-[7px] w-30px h-[30px] sm:w-[60px] sm:h-[60px] rounded-[50%] border-[2px] border-[#FF0000]"
+                            src="../assets/icons/down-arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div>
+                        <img class=" hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition  p-[7px] w-30px h-[30px] sm:w-[60px] sm:h-[60px] rounded-[50%] border-[2px] border-[#FF0000]"
+                            src="../assets/icons/right-arrow.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Список моделей section -->
+        <section>
+            <div class="max-w-[1500px] m-auto px-[10px] sm:px-[20px] md:px-[30px] mt-[60px] sm:mt-[60px] md:mt-[100px]">
+                <h2 class="font-extrabold text-[21px] leading-[140%] text-[#FFFFFF] sm:text-[32px] md:text-[52px]">
+                    Список моделей</h2>
+                <div
+                    class="mt-[25px] sm:mt-[60px] md:mt-[75px] grid grid-cols-2 sm:grid-cols-4 sm:gap-[20px] md:gap-[23px] gap-[10px]">
+                    <div
+                        class="flex items-center sm:gap-[4px] sm:max-w-[295px] sm:max-h-[101px] md:max-w-[339px] md:max-h-[109px] rounded-[10px] border border-[#FF0000]  hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition">
+                        <div>
+                            <img class="mt-[13px] sm:mt-[23px] md:mt-[24px]  w-[100%] sm:max-w-[116px] sm:w-[100%] md:max-w-[127px] sm:mb-[23px] md:mb-[23px] my-[13px]"
+                                src="./assets/imgs/GTC4LUSSO.png" alt="car img">
+                        </div>
+                        <div>
+                            <h3
+                                class="text-[10px] pr-[5px] sm:text-[21px] md:text-[24px] text-[#FF0000] leading-[140%] font-semibold">
+                                GTC4LUSSO</h3>
+                            <p
+                                class="text-[10px] sm:text-[16px] md:text-[18px] leading-[140%] font-semibold text-[#FFFFFF]">
+                                2016-2020</p>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-center sm:gap-[4px] sm:max-w-[295px] sm:max-h-[101px] md:max-w-[339px] md:max-h-[109px] rounded-[10px] border border-[#FF0000]  hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition">
+                        <div>
+                            <img class="mt-[13px] sm:mt-[23px] md:mt-[24px]  w-[100%] sm:max-w-[116px] sm:w-[100%] md:max-w-[127px] sm:mb-[23px] md:mb-[23px] my-[13px]"
+                                src="./assets/imgs/GTC4LUSSO.png" alt="car img">
+                        </div>
+                        <div>
+                            <h3
+                                class="pr-[5px] text-[10px] sm:text-[21px] md:text-[24px] text-[#FF0000] leading-[140%] font-semibold">
+                                GTC4LUSSO</h3>
+                            <p
+                                class="text-[10px] sm:text-[16px] md:text-[18px] leading-[140%] font-semibold text-[#FFFFFF]">
+                                2016-2020</p>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex items-center sm:gap-[4px] sm:max-w-[295px] sm:max-h-[101px] md:max-w-[339px] md:max-h-[109px] rounded-[10px] border border-[#FF0000]  hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition">
+                        <div>
+                            <img class="mt-[13px] sm:mt-[23px] md:mt-[24px]  w-[100%] sm:max-w-[116px] sm:w-[100%] md:max-w-[127px] sm:mb-[23px] md:mb-[23px] my-[13px]"
+                                src="./assets/imgs/GTC4LUSSO.png" alt="car img">
+                        </div>
+                        <div>
+                            <h3
+                                class="pr-[5px] text-[10px] sm:text-[21px] md:text-[24px] text-[#FF0000] leading-[140%] font-semibold">
+                                GTC4LUSSO</h3>
+                            <p
+                                class="text-[10px] sm:text-[16px] md:text-[18px] leading-[140%] font-semibold text-[#FFFFFF]">
+                                2016-2020</p>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class=" flex items-center sm:gap-[4px] sm:max-w-[295px] sm:max-h-[101px] md:max-w-[339px] md:max-h-[109px] rounded-[10px] border border-[#FF0000]  hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition">
+                        <div>
+                            <img class="mt-[13px] sm:mt-[23px] md:mt-[24px]  w-[100%] sm:max-w-[116px] sm:w-[100%] md:max-w-[127px] sm:mb-[23px] md:mb-[23px] my-[13px]"
+                                src="./assets/imgs/GTC4LUSSO.png" alt="car img">
+                        </div>
+                        <div>
+                            <h3
+                                class="pr-[5px] text-[10px] sm:text-[21px] md:text-[24px] text-[#FF0000] leading-[140%] font-semibold">
+                                GTC4LUSSO</h3>
+                            <p
+                                class="text-[10px] sm:text-[16px] md:text-[18px] leading-[140%] font-semibold text-[#FFFFFF]">
+                                2016-2020</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- arrow section -->
+        <section>
+            <div class="max-w-[1500px] sm:pt-[50px] m-auto flex gap-[25px] justify-center mt-[25px]">
+                <a href="index.html">
+                    <div>
+                        <img class=" hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition  p-[7px] w-30px h-[30px] sm:w-[60px] sm:h-[60px] rounded-[50%] border-[2px] border-[#FF0000]"
+                            src="../assets/icons/down-arrow.svg" alt="">
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div>
+                        <img class=" hover:shadow-lg hover:shadow-red-700/50 hover:scale-[1.05] hover:transition  p-[7px] w-30px h-[30px] sm:w-[60px] sm:h-[60px] rounded-[50%] border-[2px] border-[#FF0000]"
+                            src="../assets/icons/right-arrow.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="max-w-[1500px] m-auto px-[10px] sm:px-[20px] md:px-[30px]">
+                <div class="sm:flex sm:gap-[102px]   grid grid-cols-1">
+                    <div>
+                        <h2
+                            class="pt-[60px] text-[#FFFFFF] sm:text-[32px] sm:pt-[70px] md:pt-[100px] text-[21px] font-extrabold leading-[140px] uppercase">
+                            Контакты</h2>
+                        <div class="pt-[40px] md:bt-[75px] flex gap-[8px] items-center  sm:gap-[23px] md:gap-[15px]">
+                            <div>
+                                <img class="w-[19px] h-[24px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]"
+                                    src="./assets/imgs/placeholder-3 1 (1).svg" alt="">
+                            </div>
+
+                            <div>
+                                <span class="text-[12px] text-[#FFFFFF] leading-[100%] font-bold sm:text-[21px]">Наш
+                                    адрес:</span>
+                                <p
+                                    class="text-[12px] text-[#FFFFFF] leading-[100%] font-medium sm:text-[16px] sm:pt-[10px] pt-[8px] ">
+                                    Россия, г. Москва, улица Пушкина, дом 1, корпус 2</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-[40px] md:bt-[75px] flex gap-[8px] items-center  sm:gap-[23px] md:gap-[15px]">
+                            <div class="w-[19px] h-[24px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]">
+                                <img src="./assets/imgs/phone-call.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="text-[12px] text-[#FFFFFF] leading-[100%] font-bold sm:text-[21px]">Номер
+                                    телефона</span>
+                                <p
+                                    class="text-[12px] text-[#FFFFFF] leading-[100%] font-medium sm:text-[16px] sm:pt-[10px] pt-[8px] ">
+                                    example.email@gmail.com</p>
+                            </div>
+
+                        </div>
+
+                        <div class="pt-[40px] md:bt-[75px] flex gap-[8px] items-center  sm:gap-[23px] md:gap-[15px]">
+                            <div>
+                                <img class="w-[19px] h-[24px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]"
+                                    src="./assets/imgs/email.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="text-[12px] text-[#FFFFFF] leading-[100%] font-bold sm:text-[21px]">Наш
+                                    E-mail</span>
+                                <p
+                                    class="text-[12px] text-[#FFFFFF] leading-[100%] font-medium sm:text-[16px] sm:pt-[10px] pt-[8px] ">
+                                    example.email@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <h3
+                                class="text-[12px] sm:text-[24px] leading-[100%] font-extrabold text-[#FFFFFF] pt-[20px] sm:pt-[40px]">
+                                Мы в социальных сетях</h3>
+                            <div class="flex pt-[20px] items-center gap-[25px] sm:gap-[20px]">
+                                <a class=" hover:scale-[1.05] hover:transition" href="index.html">
+                                    <img class="w-[30px] h-[30px] sm:-[40px] sm:h-[40px]"
+                                        src="./assets/icons/whatsapp.svg" alt="">
+                                </a>
+                                <a class=" hover:scale-[1.05] hover:transition" href="index.html">
+                                    <img class="w-[30px] h-[30px] sm:-[40px] sm:h-[40px]"
+                                        src="./assets/icons/telegram.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border border-[#FF0000] rounded-[10px] px-[10px] sm:mx-[20px] md:mx-[30px] sm:mt-[140px] mt-[40px] mx-[10px]  ">
+                        <div>
+                            <!-- 2 section h2 -->
+                            <h2
+                                class="sm:text-[24px] md:text-[32px] sm:pt-[30px] font-medium text-[16px] leading-[140%] text-center text-[#FFFFFF] pt-[25px] px-[24px]">
+                                <span
+                                    class="sm:text-[24px] md:text-[32px] font-medium text-[16px] leading-[140%] text-center text-[#FFB72B]">
+                                    Чтобы узнать точную <br class="sm:hidden">
+                                    стоимость работ,
+                                </span> <br>
+                                запишитесь на бесплатную <br class="sm:hidden">
+                                консультацию
+                            </h2>
+                            <!-- 2 section footer section -->
+                            <footer class="sm:mt-[30px] sm:grid sm:w-[100%] sm:gap-[10px]">
+                                <div>
+                                    <input
+                                        class="font-normal sm:mt-[0] border-[#3333334D] text-[14px] sm:text-[18px] leading-[140%] py-[14px] pl-[10px] outline-none text-[#1A1A1A80] w-[100%] mt-[25px] rounded-[10px]"
+                                        type="text" placeholder="Ваше имя">
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="flex mt-[10px] sm:mt-[0] gap-[10px] border border-[#3333334D] rounded-[10px] outline-none bg-[#FFFFFF] border-[#3333334D]">
+                                        <img class="pl-[10px]" src="../assets/icons/Russia.svg" alt="">
+                                        <img src="../assets/icons/arrow-bottom.svg" alt="">
+                                        <p
+                                            class="sm:text-[15px] py-[14px] text-[14px] leading-[140%] outline-none bg-none text-[#1A1A1A80]">
+                                            <span class="text-black">+7</span> (999) 999-99-99
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        <button
+                                            class=" sm:mt-[0] sm:text-[18px] bg-[#FF0000] text-[15px] text-[#FFFFFF] leading-[100%]  font-normal py-[15px] w-[100%] rounded-[10px] mt-[10px] hover:shadow-lg  hover:shadow-red-500/50 hover:bg-red-700 hover:transition"
+                                            type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                                    </a>
+                                </div>
+                            </footer>
+                            <p
+                                class="text-[12px] sm:pt-[30px] sm:pb-[30px] sm:text-[16px] pb-[25px] leading-[140%] text-center font-medium text-[#FFFFFF] pt-[25px]">
+                                Оставляя заявку, вы даете согласие на <br class="sm:hidden">
+                                обработку персональных данных
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="relative max-w-[1500px] w-[100%] mt-[60px] md:mt-[100px]">
+                <img src="./assets/imgs/Mapsicle-map.png" alt="">
+                <div>
+                    <img class="absolute top-[24%] right-[45%] " src="./assets/icons/map-svg.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex justify-between">
+        <div class="max-w-[1500px] w-[100%] m-auto px-[10px] sm:px-[20px] md:sx-[30px]">
+            <div class="sm:flex sm:justify-between mt-[60px]">
+                <div>
+                    <img src="./assets/icons/footer-log.svg" alt="">
+
+                    <a href="index.html">
+                        <p
+                            class="text-[12px] leading-[140%] font-medium text-[#FFFFFF] pt-[20px] sm:pt-[30px] sm:text-[16px] hover:text-[#FF0000] hover:transition">
+                            © 2023 Company name</p>
+                    </a>
+                    <a href="index.html">
+                        <p
+                            class="text-[12px] leading-[140%] font-medium text-[#FFFFFF] pt-[10px] sm:text-[16px] hover:text-[#FF0000] hover:transition">
+                            Все права
+                            защищены</p>
+                    </a>
+                </div>
+
+                <ul class="sm:flex  gap-[20px]">
+                    <li>
+                        <a href="#">
+                            <span
+                                class="text-[12px] sm:text-[16px] md:text-[18px] text-[#FFFFFF] hover:transition hover:text-[#FF0000]">Услуги</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span
+                                class="text-[12px] sm:text-[16px] md:text-[18px] text-[#FFFFFF] hover:transition hover:text-[#FF0000]">Преимущества</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span
+                                class="text-[12px] sm:text-[16px] md:text-[18px] text-[#FFFFFF] hover:transition hover:text-[#FF0000]">Наши
+                                работы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span
+                                class="text-[12px] sm:text-[16px] md:text-[18px] text-[#FFFFFF] hover:transition hover:text-[#FF0000]">Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="flex gap-[10px]">
+
+                    <div class="sm:block hidden w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
+                        <img src="./assets/icons/next 1.svg" alt="">
+                    </div>
+                    <a href="index.html" class="sm:block hidden">
+                        <p class="text-[18px] font-semibold text-[#FFFFFF] hover:text-[#FF0000] hover:transition">Наверх
+                        </p>
+                    </a>
+
+                    <a class="sm:hidden " href="index.html">
+                        <p
+                            class="text-center text-[12px] sm:pt-[25px] text-[#FFFFFF] font-medium sm:text-[16px] pb-[20px] sm:pb-[40px] hover:text-[#FF0000] hover:transition">
+                            Политика конфиденциальности</p>
+                    </a>
+                </div>
+            </div>
+            <a class="hidden sm:block" href="index.html">
+                <p
+                    class=" text-center sm:pt-[25px] text-[#FFFFFF] font-medium text-[16px] pb-[20px] sm:pb-[40px] hover:text-[#FF0000] hover:transition">
+                    Политика конфиденциальности</p>
+            </a>
+        </div>
+
+
+        <div class="flex gap-[10px] mt-[220px]">
+            <div class="sm:hidden block w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
+                <img src="./assets/icons/next 1.svg" alt="">
+            </div>
+            <a href="index.html" class="sm:hidden block">
+                <p class="text-[18px] font-semibold text-[#FFFFFF] hover:text-[#FF0000] hover:transition">Наверх</p>
+            </a>
+        </div>
+    </footer>
 
 </body>
+
 </html>
