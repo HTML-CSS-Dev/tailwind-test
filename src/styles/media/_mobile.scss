@@ -1,0 +1,79 @@
+@media (min-width:450px) {
+//    dessert-cards
+    .title {
+        margin:24px 0 32px;
+        font-size:42px;
+    }
+
+    .add-btn {
+        padding:12px 28px;
+        font-size: 20px;
+        transform: translateY(-30px);
+    }
+
+    .count-btn {
+        padding: 12px 12px;
+        font-size: 20px;
+        gap:55px;
+        transform: translateY(-30px);
+    }
+
+    .desserts {
+        &__cards {
+            &__name {
+                font-size: 18px;
+            }
+
+            &__full-title {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            &__price {
+                font-size:22px;
+            }
+        }
+    }
+
+// orders
+
+.order {
+    &__title {
+        font-size:25px;
+    }
+}
+
+.orders {
+    &__details {
+        &__title {
+            font-size: 18px;
+        }
+    }
+}
+
+
+.points, .prize1 ,  .prize2{
+    font-size: 18px;
+}
+
+.total-price {
+    &__order {
+        font-size: 20px;
+    }
+
+    &__amount {
+        font-size: 25px;
+    } 
+}
+
+.delivery-btn {
+    padding: 16px 20px;
+    font-size: 18px;
+}
+
+.confirm-btn {
+    padding: 16px 24px;
+    font-size: 18px;
+}
+
+}

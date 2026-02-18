@@ -1,0 +1,79 @@
+@use '../mix-ins/mix-in';
+
+.title {
+    font-weight:700;
+    font-size:32px;
+    margin:20px 0 25px;
+}
+
+.desserts {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        gap:24px;
+    }
+    &__cards {
+        &__main {
+            img {
+              width:100%;
+              height:auto;
+            }
+        }
+
+        &__name {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgb(56, 56, 56);
+        }
+
+        &__full-title { 
+            font-size: 18px;
+            line-height: 100%;
+            font-weight: 600;
+            color: rgb(23, 23, 23);
+            margin: 8px 0;
+        }
+
+        &__price {
+            font-weight:600;
+            line-height:100%;
+            font-size:20px;
+            color: rgb(208, 4, 4);
+        }
+    }
+}
+
+
+
+.add-btn {
+    @include mix-in.card-button;
+    background: white;
+    padding: 10px 25px;
+    border: 1px solid rgb(88, 1, 88);
+    gap:9px;
+
+    span {
+        color: rgb(23, 23, 23);
+    }
+
+    img {
+        @include mix-in.my-size;
+    }
+}
+
+
+.count-btn {
+    @include mix-in.card-button;
+    background:#b52919;
+    border: none;
+    padding: 10px 10px;
+    gap:45px;
+
+    span {
+        color: white;  
+    }
+
+    img {
+        @include mix-in.my-size;
+    }
+}

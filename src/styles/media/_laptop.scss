@@ -1,0 +1,14 @@
+@media( min-width:1280px ) {
+    
+.scroll-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desserts {
+    height: 740px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+}

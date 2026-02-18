@@ -1,0 +1,30 @@
+// desserts cards
+@mixin card-button {
+    display: flex;
+    align-items:center;
+    border-radius:30px;
+    transform: translateY(-25px);
+    margin:auto;
+    font-weight:600;
+    font-size:14px;
+}
+
+@mixin my-size {
+    height: 20px;
+    width: 20px;
+}
+
+
+// orders 
+
+@mixin same-fonts {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin same-visibilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
