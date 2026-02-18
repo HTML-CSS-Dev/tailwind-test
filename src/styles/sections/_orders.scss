@@ -1,11 +1,12 @@
 @use "../mix-ins/mix-in";
 
 .order {
-    margin: 32px 32px;
+    margin-top: 32px ;
     &__wrapper {
         border-radius: 12px;
         padding: 24px;
         background: white;
+        width: 100%;
     }
 
     &__title {

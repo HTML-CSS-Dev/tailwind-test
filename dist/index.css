@@ -97,12 +97,13 @@ body {
 }
 
 .order {
-  margin: 32px 32px;
+  margin-top: 32px;
 }
 .order__wrapper {
   border-radius: 12px;
   padding: 24px;
   background: white;
+  width: 100%;
 }
 .order__title {
   font-size: 20px;
