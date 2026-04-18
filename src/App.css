@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer components {
+    body {
+        scroll-behavior: smooth;
+    }
+
+    .main-container {
+        margin: auto;
+        max-width: 1280px;
+    }
+
+    .animated:hover #animated {
+        transform: translateX(5px);
+    }
+
+    .heading {
+        @apply leading-14 text-5xl font-semibold text-[#232536];
+    }
+
+    .pre-heading {
+        @apply font-medium text-[14px] leading-5 text-[#000000] uppercase;
+    }
+}
