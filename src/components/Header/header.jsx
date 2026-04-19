@@ -12,7 +12,7 @@ export default function Header() {
         <div className="border-b-2 border-solid border-[#FFFFFF0D]">
         <div className="main-container">
             <nav className="flex justify-between items-center">
-                <a href="#" className="cursor-pointer">
+                <a href="#" target="_blank" className="cursor-pointer">
                     <MainLogo color = "white"/>
                 </a>
                 <ul className="flex gap-8 items-center">
