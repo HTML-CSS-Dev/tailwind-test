@@ -1,3 +1,5 @@
+import SameBtn from "../../common/same-button";
+
 export default function ServiceSection() {
     return (
         <section className="bg-[#FFE6D2] py-24">
@@ -7,19 +9,8 @@ export default function ServiceSection() {
                 <h3 className="pre-heading">Our Services</h3>
                 <h4 className="heading pt-3 pb-10">We build software solutions <br /> that solve client's business <br /> challenges</h4>
                 
-                    <button className="bg-[#444CFC] relative py-5 px-8 flex items-center gap-4 cursor-pointer hover:bg-[#212cfa] duration-100 ease-in active:scale-[1.01] text-white">
-                        <svg className="absolute top-0 left-0" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 11.4074V0H28V11.4074H0Z" fill="#666DFF"/>
-                            <path d="M0 27.9999V19.7036H7.72414V27.9999H0Z" fill="#666DFF"/>
-                            <path d="M0 19.7037V0H18.3448V19.7037H0Z" fill="#FFA155"/>
-                            <path d="M7.72461 11.4074V0H18.3453V11.4074H7.72461Z" fill="#FFD3AF"/>
-                        </svg>
+                    <SameBtn text = "Start a Project" />
 
-                        Request Quote
-                        <svg className="mt-1.5" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.3536 4.03544C20.5488 3.84018 20.5488 3.52359 20.3536 3.32833L17.1716 0.146351C16.9763 -0.0489113 16.6597 -0.0489113 16.4645 0.146351C16.2692 0.341613 16.2692 0.658195 16.4645 0.853458L19.2929 3.68188L16.4645 6.51031C16.2692 6.70557 16.2692 7.02216 16.4645 7.21742C16.6597 7.41268 16.9763 7.41268 17.1716 7.21742L20.3536 4.03544ZM0 4.18188L20 4.18188V3.18188L0 3.18188L0 4.18188Z" fill="white"/>
-                        </svg>
-                    </button>
                 </div>
 
                 <div className="flex mt-20 justify-between">
