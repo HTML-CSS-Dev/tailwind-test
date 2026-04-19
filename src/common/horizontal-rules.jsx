@@ -5,3 +5,11 @@ export default function HorizontalRulers() {
                             <rect x="10.0498" width="44.6449" height="5.99069" fill="#FFD3AF"/>
             </svg>
 }
+
+export function VerticalRulers() {
+    return <svg width="17" height="340" viewBox="0 0 17 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.13299e-05" y="340" width="340" height="16.5491" transform="rotate(-90 1.13299e-05 340)" fill="#444CFC"/>
+                            <rect x="1.13299e-05" y="290.867" width="290.867" height="16.5491" transform="rotate(-90 1.13299e-05 290.867)" fill="#FFA155"/>
+                            <rect x="0.0263785" y="291.03" width="210.823" height="16.5233" transform="rotate(-90 0.0263785 291.03)" fill="#FFD3AF"/>
+            </svg>
+}
